@@ -1,0 +1,23 @@
+.portfolio {
+    padding-top: 80px;
+    padding-bottom: 115px;
+
+    &__header {
+        margin: 0;
+        margin-bottom: 70px;
+        ;
+        font-weight: 700;
+        font-size: 46px;
+        line-height: 130%;
+        text-align: center;
+        color: #000000;
+    }
+
+    &__card {
+        &-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+}
