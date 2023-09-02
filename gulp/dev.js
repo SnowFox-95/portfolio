@@ -83,7 +83,7 @@ gulp.task("files:dev", function () {
 gulp.task("js:dev", function () {
   return (
     gulp
-      .src("./src/js/*.js")
+      .src(["./node_modules/swiper/swiper-bundle.min.js", "./src/js/*.js"])
       .pipe(changed("./build/js/"))
       .pipe(plumber(plumberNotify("JS")))
       // .pipe(babel())
@@ -93,11 +93,7 @@ gulp.task("js:dev", function () {
 });
 
 gulp.task("video:dev", function () {
-  return (
-   	gulp
-   		.src("./src/video/*.*")
-		.pipe(gulp.dest("./build/video/"))
-	);
+  return gulp.src("./src/video/*.*").pipe(gulp.dest("./build/video/"));
 });
 
 const serverOptions = {

@@ -104,7 +104,7 @@ gulp.task("files:docs", function () {
 
 gulp.task("js:docs", function () {
   return gulp
-    .src("./src/js/*.js")
+  .src(["./node_modules/swiper/swiper-bundle.min.js", "./src/js/*.js"])
     .pipe(changed("./docs/js/"))
     .pipe(plumber(plumberNotify("JS")))
     .pipe(babel())
@@ -113,9 +113,7 @@ gulp.task("js:docs", function () {
 });
 
 gulp.task("video:docs", function () {
-  return gulp
-	.src("./src/video/*.*")
-	.pipe(gulp.dest("./build/video/"));
+  return gulp.src("./src/video/*.*").pipe(gulp.dest("./build/video/"));
 });
 
 const serverOptions = {

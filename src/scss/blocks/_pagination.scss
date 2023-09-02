@@ -1,0 +1,29 @@
+.pagination {
+    ul {
+        display: flex;
+        flex-direction: row;
+        padding: 50px 200px 0 535px;
+
+        li {
+            margin-right: 10px;
+            font-size: 20px;
+
+            a {
+                color: rgba(18, 67, 123, 0.9137254902)
+            }
+
+            .link__active {
+                color: #000;
+            }
+        }
+    }
+
+    .link__main {
+        margin: 20px 13px 0 0;
+        font-size: 18px;
+        display: block;
+        color: #000;
+        text-decoration: none;
+        text-align: center;
+    }
+}
