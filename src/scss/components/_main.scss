@@ -1,0 +1,28 @@
+.portfolio {
+  padding: 80px 0 115px 0;
+
+  &__header {
+    margin: 0;
+    margin: 0 0 70px 0;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 130%;
+    text-align: center;
+    color: #000;
+  }
+
+  &__card {
+    &-wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+      gap: 10px;
+
+      &-1 {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+@import '_category'
