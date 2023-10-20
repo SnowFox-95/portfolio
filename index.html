@@ -11,28 +11,60 @@
     <main>
       <section class="header">
         <h1 class="header__title">Алексей Беспятых</h1>
-        <p class="header__subtitle">фрилансер, веб-разработчик, создание сайтов</p><a class="header__arrow" href="#portfolio"><img src="./assets/img/svg/chevron-down.svg" alt="arrow"/></a>
+        <p class="header__subtitle">фрилансер, веб-разработчик, создание сайтов</p><a class="header__arrow" href="#portfolio"><img src="./assets/img/svg/main/chevron-down.svg" alt="arrow"/></a>
       </section>
-      <section class="one"></section>
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__row">
-          <div class="footer__copyright">
-            <div class="footer__copyright-name">© Snowfox95</div>
-            <p class="footer__copyright-subname">Алексей Беспятых</p>
-            <p>HTML верстка и разработка сайтов</p>
-          </div>
-          <div class="footer__icons"> 
-            <p>Мои профили в социальных сетях</p>
-            <div class="footer__icons-row"> <a href="https://vk.com/alexbespyatykh"><img src="./assets/img/svg/vk.svg" alt="Vkprofile"/></a><a href="https://github.com/SnowFox-95"> <img src="./assets/img/svg/github.svg" alt="GitProfile"/></a></div>
-          </div>
-          <div class="footer__contacts"><a class="footer__btn" href="#"></a>
-            <p> </p>
+      <section class="portfolio" id="portfolio">
+        <div class="container">
+          <h2 class="portfolio__header">Мои проекты</h2>
+          <div class="portfolio__card-wrapper">
+            <div class="category"><a class="category__link" href="pages/learn.min.html">
+                <picture>
+                  <source src="./assets/img/png/main/category-01.webp" type="image/webp"/><img src="./assets/img/png/main/category-01.png" alt="learnProjects" srcset=""/>
+                </picture>
+                <h3 class="category__title">Учебные проекты</h3>
+                <p>Сайты сверстанные <br>по разнообразным урокам</p></a></div>
           </div>
         </div>
-      </div>
-    </footer>
+      </section>
+      <section class="footer"> 
+        <div class="container">
+          <div class="footer__row">
+            <div class="footer__copyright">
+              <div class="footer__copyright-name">© Snowfox95</div>
+              <p class="footer__copyright-subname">Алексей Беспятых</p>
+              <p>HTML верстка и разработка сайтов</p>
+            </div>
+            <div class="footer__icons"> 
+              <p>Мои профили в социальных сетях</p>
+              <div class="footer__icons-row"> <a href="https://vk.com/alexbespyatykh"><img src="./assets/img/svg/main/vk.svg" alt="Vkprofile"/></a><a href="https://github.com/SnowFox-95"> <img src="./assets/img/svg/main/github.svg" alt="GitProfile"/></a></div>
+            </div>
+            <div class="footer__contacts"><a class="footer__btn" href="#">Связаться Вконтакте</a>
+              <p>Напишите мне, чтобы заказать или узнать стоимость верстки вашего проекта.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <!-- footer.footer
+    .container
+        .footer__row
+            .footer__copyright
+                .footer__copyright-name © Snowfox95
+                p.footer__copyright-subname Алексей Беспятых
+                p HTML верстка и разработка сайтов
+            .footer__icons 
+                p Мои профили в социальных сетях
+                .footer__icons-row 
+                    a(href="https://vk.com/alexbespyatykh")
+                        img(src="./assets/img/svg/vk.svg", alt="Vkprofile") 
+                    a(href="https://github.com/SnowFox-95") 
+                        img(src="./assets/img/svg/github.svg", alt="GitProfile")
+            .footer__contacts
+                a.footer__btn(href="#") Связаться Вконтакте
+                p Напишите мне, чтобы заказать или узнать стоимость верстки вашего проекта.
+    
+    -->
     <!-- Библиотеки и плагины-->
     <script src="./assets/libs/jquery/jquery-3.6.1.min.js"> </script>
     <script src="./assets/libs/vide/jquery.vide.min.js"></script>
