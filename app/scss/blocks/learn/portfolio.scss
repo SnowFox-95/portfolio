@@ -1,0 +1,21 @@
+.learn {
+    padding-top: 80px;
+    padding-bottom: 50px;
+
+    &__header {
+        margin: 0;
+        margin: 0 0 70px 0;
+        font-weight: 700;
+        font-size: 46px;
+        line-height: 130%;
+        text-align: center;
+        color: #000;
+    }
+}
+
+.portfolio__card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
