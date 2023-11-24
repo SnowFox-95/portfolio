@@ -1,11 +1,21 @@
+/* Base */
 @import 'base/fonts';
 @import 'base/base';
-
+/* Index-page */
 @import 'blocks/index/header';
 @import 'blocks/index/category';
 @import 'blocks/index/categoryCard';
 @import 'blocks/index/footer';
+/* learn-page */
 @import 'blocks/learn/portfolio';
 @import 'blocks/learn/portfolioCard';
 
+/* Projects */
+@import'app/scss/blocks/learn/projects';
+/* UI */
 @import 'blocks/pag';
+
+/* node_modules */
+@import '../../node_modules/slick-slider/slick/slick.scss';
+@import '../../node_modules/slick-slider/slick/slick-theme.scss';
+@import '../../node_modules/fancybox/dist/scss/jquery.fancybox.scss';

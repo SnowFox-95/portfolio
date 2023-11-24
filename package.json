@@ -10,6 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.29.0",
+    "fancybox": "^3.0.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-avif": "^1.1.1",
@@ -24,7 +25,9 @@
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify-es": "^3.0.0",
     "gulp-webp": "^4.0.1",
-    "sass": "^1.59.3"
+    "jquery": "^1.12.4",
+    "sass": "^1.59.3",
+    "slick-slider": "^1.8.2"
   },
   "dependencies": {
     "gulp-cli": "^2.3.0"

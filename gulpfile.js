@@ -83,7 +83,14 @@ function sprite() {
 }
 
 function scripts() {
-  return src(["app/js/*.js"])
+  return src([
+    "node_modules/jquery/dist/jquery.js",
+    "node_modules/fancybox/dist/js/jquery.fancybox.js",
+    "node_modules/slick-slider/slick/slick.js",
+    "app/js/main.js",
+    "app/js/url.js",
+    "app/js/slickMain.js",
+  ])
     .pipe(concat("main.min.js"))
     .pipe(uglify())
     .pipe(dest("app/js"))
@@ -91,7 +98,7 @@ function scripts() {
 }
 
 function styles() {
-  return src("app/scss/style.scss")
+  return src(["app/scss/style.scss"])
     .pipe(autoprefixer({ overrideBrowserslist: ["last 10 version"] }))
     .pipe(concat("style.min.css"))
     .pipe(scss({ outputStyle: "compressed" }))

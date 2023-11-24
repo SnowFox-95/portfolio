@@ -1,9 +1,29 @@
-.pag {padding: 20px 0 0 0;
+.pag {
+    padding: 20px 0 0 0;
     font-size: 20px;
     text-align: center;
 
-    a {
+    &__link {
         text-decoration: none;
         color: #000;
+
+        &.active,
+        &.active-1 {
+            font-weight: 700;
+            cursor: auto;
+
+            &-1 {
+                margin-left: 70px;
+            }
+        }
+
+    }
+}
+
+.home {
+    &__link {
+        margin-top: 10px;
+        position: absolute;
+        left: 50%;
     }
 }
