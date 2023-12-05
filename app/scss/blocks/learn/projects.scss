@@ -1,5 +1,5 @@
 .project {
-    padding: 80px 0 55px 0;
+    padding: 80px 0 25px 0;
     text-align: center;
     color: #000;
 
@@ -59,11 +59,12 @@
             margin-top: 20px;
             padding: 0 30px;
 
-            &:hover path{
+            &:hover path {
                 color: #3c5371;
             }
         }
     }
+
 }
 
 .arrow {
@@ -80,4 +81,7 @@
     &-right {
         transform: translateX(30px);
     }
+}
+.back{
+    margin-top: 10px;
 }
