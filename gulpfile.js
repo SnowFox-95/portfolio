@@ -67,9 +67,9 @@ function images() {
     .pipe(dest("app/images"));
 }
 
-function sprite() {
-  return src("app/images/**/*.svg")
-    .pipe(
+/* function sprite() {
+/*  return src("app/images/*.svg", { allowEmpty: true })
+/*    .pipe(
       svgSprite({
         mode: {
           stack: {
@@ -80,7 +80,7 @@ function sprite() {
       })
     )
     .pipe(dest("app/images"));
-}
+} */
 
 function scripts() {
   return src([
@@ -88,7 +88,7 @@ function scripts() {
     "node_modules/fancybox/dist/js/jquery.fancybox.js",
     "node_modules/slick-slider/slick/slick.js",
     "app/js/main.js",
-    "app/js/url.js",
+    /* "app/js/url.js", */
     "app/js/slickMain.js",
   ])
     .pipe(concat("main.min.js"))
@@ -128,15 +128,16 @@ function building() {
   return src(
     [
       "app/css/style.min.css",
-      "app/images/*.*",
+      "app/images/**/*.*",
       "!app/images/**/*.html",
       "!app/images/*.svg",
-      "app/images/sprite.svg",
+      /* "app/images/sprite.svg", */
       "app/fonts/*.*",
       "app/js/main.min.js",
+      "app/js/url.js",
       "app/**/*.html",
       "!app/chunk/**/*.*",
-      "!app/components/*.*",
+      "!app/components/**/*.*",
     ],
     {
       base: "app",
@@ -147,7 +148,7 @@ function building() {
 exports.styles = styles;
 exports.images = images;
 exports.fonts = fonts;
-exports.sprite = sprite;
+/* exports.sprite = sprite; */
 exports.scripts = scripts;
 exports.pages = pages;
 exports.watching = watching;
