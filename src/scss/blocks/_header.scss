@@ -1,10 +1,42 @@
-.header {
-	background-color: rgb(195, 220, 231);
-	padding: 50px 0;
+@use '../base/vars' as vars;
 
-	&__row {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+.header {
+	width: 100%;
+	height: 100vh;
+	background-color: #7fafe4;
+	background-image: url(../../img/header/header-bg.jpg);
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	&_title {
+		margin: 0;
+		margin-bottom: 25px;
+		font-weight: 700;
+		font-size: 56px;
+		line-height: 130%;
+		text-align: center;
+		color: vars.$page-bg;
+	}
+
+	&_subtitle {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 150%;
+		text-align: center;
+		letter-spacing: 0.2em;
+		text-transform: uppercase;
+		color: vars.$page-bg;
+	}
+
+	&_arrow {
+		width: 48px;
+		height: 48px;
+		position: absolute;
+		bottom: 30px;
+		left: 50%;
+		transform: translate(-50%, 0);
 	}
 }

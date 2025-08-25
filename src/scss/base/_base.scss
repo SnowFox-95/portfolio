@@ -8,7 +8,7 @@ body {
     // Для поддержки SCSS-переменных и CSS custom properties одновременно:
     background-color: vars.$page-bg;         // SCSS-переменная
     color: vars.$text-color;                 // SCSS-переменная
-    font-family: vars.$font-main;            // SCSS-переменная
+    font-family: vars.$font;            // SCSS-переменная
 
     // Если хотите оставить поддержку динамических тем через custom properties:
     // background-color: var(--page-bg);
